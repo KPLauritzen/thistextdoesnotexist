@@ -1,0 +1,6 @@
+flask
+aiohttp
+asyncio
+tensorflow
+flask_wtf
+wtforms
