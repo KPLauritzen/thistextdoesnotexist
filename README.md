@@ -11,3 +11,21 @@ www.thistextdoesnotexist.com
 - Point the newly online app to our domain
 - ???
 - PROFIT
+## Usage
+1) Get required code
+```
+git clone https://github.com/KPLauritzen/thistextdoesnotexist.git thistext
+cd thistext
+pip install -r requirements.txt
+```
+2) run Flask app
+```
+python app/app.py
+```
+
+This will take a while the first time, as it has to download the pretrained model.
+
+3) See if it works:
+
+Open your browser at `localhost:5000`
+Input some weird stuff and see how the model reacts. This is very slow, expect 30s wait.
