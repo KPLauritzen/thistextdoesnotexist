@@ -9,24 +9,30 @@
         <h1>
             This text does not exist
         </h1>
-        <p>
-            Grembock's Delicatessen in Austin, Texas, just opened its doors Sunday night for the first full week in business since being founded on Aug. 30. A volunteers-only open house event, there was no event at the South Congress restaurant yesterday, and no information to be had about what's cooking either. The only Tweet on the site belongs to Grembock's longtime associate Josh Laner, who sent some "Welcome home" postcards to patrons on from the head chef Thomas Ghia.
-
-            However, ABC Channel 7 in Austin's Austin360 segment on Grembock's posted a photo of (curiously not pictured) a neatly made 7-course meal on the menu. Eater reached out to Grembock's management for additional info. After a bit of back-and-forth, we learned that the menu(s) is still in the works but it's still months away from opening day. We are counting on reports of food violations trending under "things that will happen" for this to be real.
-
-            Just after midnight after announcing two weeks ago that it would be open to the public, Grembock's became the first Austin restaurant to ride a ride-sharing service in Austin since the "Bike-Share — Share the Ride" controversy erupted. Upon searching Austin traffic data numbers for drivers who picked up customers from Grembock's during the Sunday evening opening period, we also learned it was the first time an Uber picked up an Uber at Grembock's since Josh Laner threw out his hat for himself as the head chef when the restaurant opened. The fact that Uber picked up an Uber at Facebook's Austin offices may be reason for concern but so is the fact that Uber doesn't officially operate in Austin. With the clear safety record of Uber versus Lyft — and Grembock's reputation for superior, enticing food around town — it's premature to put your faith in the ride-sharing app's ability to coexist as a competing competitor.
-
-            Owner Thomas Gamm…
-
-            Here is a bit of information we have learned so far. A rough menu has been spent firming up menu items for the full week. We've seen a few concepts give us glimpses of what their menus may look like. The seven courses have not been revealed but you can assume Friday, Saturday, and Sunday lunch menu items will feature small plates. The breakfast menu is on the way, and dessert. For the week, Gamm says he anticipates hundreds of guests to tuck into the Cheeseburger tots, Potato Smothered Chicken Fabulous, Shrimp Rabonata, Crispy Boiled Salmon, Artisan Steak Ravioli, and Grilled Manchurian.
-
-            Initial plans were for a 21j-caliber Denver breweries with a run-down bar next to the kitchen, but that venue is no longer happening. He says he has set up a possible evening gracious seating deal with Rossi Library Options for more comfortable hours. Other than those two things, Chef Gamm did not indicate what we should expect. An opener date?
-
-            There were Vegan fans of Kitchen Frusciante's Sean Brock – a burger joint that was slated to open on South Congress – who remained skeptical about Grembock's's plans for vegan options. Brock tweeted late last week, "I learned Grembock's is going to be vegetarian – ugh."
-
-            Like Austin, Grembock's is in the middle of its own food crisis. Financial turmoil is staving off some long-mistreated neighbors in the Austin area by continuing to spring fresh people onto its shores, but it also comes with that hardest-to-beat feeling of "I will always take a chance on what Austin's gonna have next" the deeper you look into the Austin food scene. Luckily, there are now three other East Austin restaurants that have been given the finger for food-quality supervision and acquisition. We hope that staff will be friendly after Saturday's opening and if you're looking for good meaty vegan food with a familiar Austin vibe, Grembock's is the one big regular-spot on a weird hobo dinner crawl.<|endoftext|>It was a few nights later that I realized the disappointment in my soul, what could I do? What were the options? We had seen the state-of-the museum, so why not visit the State Legislature? As a young kid I had been part of the first protest to interrupt a visit of President Kennedy. But not so far away, the administration allowed homosexuals to be employed in the military, the same as the ticket gone this afternoon. How could I shatter people's trust in them, I wondered. Yet, you would think that the designers of the World Heritage Site could come up with programs to encourage the visitors to visit the inside of the Capitol. But there were no results, not at least that we could find.
-
-            In any case, that day, after my comments at the museum, a scream went up in the museum, and I was dragged
-
+        <p id="gpt2-quote">
+            lol
+        </p>
+        <button type="button"
+                onclick="readData()">
+        update</button>
     </body>
+    <script>
+     function myFunction(json) {
+         document.getElementById("gpt2-quote").innerHTML = json.output;
+     }
+
+     function readData(){
+         var name = "data/unconditional" + randomNumber() + ".json"
+         console.log(name)
+         fetch(name)
+             .then(response => response.json())
+             .then(json => myFunction(json));
+     }
+
+     function randomNumber(){
+         var num =  Math.floor((Math.random() * 500) + 1);
+         return num.toString()
+     }
+     readData()
+    </script>
 </html>
